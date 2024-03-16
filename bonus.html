@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .caption {
+  position: relative;
+  overflow: hidden;
+}
+
+.caption__media {
+  display: block;
+  min-width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.caption__overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 10px;
+  color: white;
+  transform: translateY(100%);
+  transition: transform .35s ease-out;
+}
+
+.caption:hover .caption__overlay {
+  transform: translateY(0);
+}
+</style>
+<body>
+    <article class="caption">
+        <img class="caption__media" src="http://farm7.staticflickr.com/6088/6128773012_bd09c0bb4e_z_d.jpg" />
+        <div class="caption__overlay">
+          <h1 class="caption__overlay__title">Caption title</h1>
+          <p class="caption__overlay__content">Lorem ipsum doler sit dui amet.</p>
+        </div>
+      </article>
+</body>
+</html>
